@@ -1,0 +1,142 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lejeune.david.almostweekend2.AlmostActivity">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/firstBar"
+        android:layout_alignLeft="@+id/firstBar"
+        android:layout_alignRight="@+id/firstBar"
+        android:layout_alignStart="@+id/firstBar"
+        android:layout_below="@+id/txtPercentage"
+        android:text="txtDate"
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/lblDaysWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="Day(s)"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/lblHoursWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblDaysWeekend"
+        android:layout_alignBottom="@+id/lblDaysWeekend"
+        android:layout_toEndOf="@+id/lblDaysWeekend"
+        android:layout_toRightOf="@+id/lblDaysWeekend"
+        android:text="Hours"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/lblMinutesWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblHoursWeekend"
+        android:layout_alignBottom="@+id/lblHoursWeekend"
+        android:layout_toEndOf="@+id/lblHoursWeekend"
+        android:layout_toRightOf="@+id/lblHoursWeekend"
+        android:text="Minutes"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/lblSecondsWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblMinutesWeekend"
+        android:layout_alignBottom="@+id/lblMinutesWeekend"
+        android:layout_toEndOf="@+id/lblMinutesWeekend"
+        android:layout_toRightOf="@+id/lblMinutesWeekend"
+        android:text="Seconds"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtDaysWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblDaysWeekend"
+        android:layout_alignStart="@+id/lblDaysWeekend"
+        android:layout_below="@+id/lblDaysWeekend"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/txtHoursWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMinutesWeekend"
+        android:layout_alignBottom="@+id/txtMinutesWeekend"
+        android:layout_toEndOf="@+id/lblDaysWeekend"
+        android:layout_toRightOf="@+id/lblDaysWeekend"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/txtMinutesWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblMinutesWeekend"
+        android:layout_toEndOf="@+id/lblHoursWeekend"
+        android:layout_toRightOf="@+id/lblHoursWeekend"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/txtSecondsWeekend"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtMinutesWeekend"
+        android:layout_toEndOf="@+id/txtMinutesWeekend"
+        android:layout_toRightOf="@+id/txtMinutesWeekend"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <ProgressBar
+        android:id="@+id/firstBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtSecondsWeekend"
+        android:layout_alignLeft="@+id/txtDaysWeekend"
+        android:layout_alignRight="@+id/txtSecondsWeekend"
+        android:layout_alignStart="@+id/txtDaysWeekend"
+        android:layout_below="@+id/txtDaysWeekend"
+        android:layout_marginTop="89dp"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/firstBar"
+        android:layout_alignEnd="@+id/firstBar"
+        android:layout_alignLeft="@+id/firstBar"
+        android:layout_alignRight="@+id/firstBar"
+        android:layout_alignStart="@+id/firstBar"
+        android:layout_marginBottom="15dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+
+</android.widget.RelativeLayout>
