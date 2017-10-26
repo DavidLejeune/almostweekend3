@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         firstBar = (ProgressBar)findViewById(R.id.firstBar);
         firstBar.setVisibility(View.VISIBLE);
+        firstBar.setScaleY(3f);
         firstBar.setMax(100);
 
         txtDate = (TextView) findViewById(R.id.txtDate);
@@ -75,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void countDown(){
+
+
+
+        Random rnd = new Random();
+        firstBar.getProgressDrawable().setColorFilter(
+                Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256)), android.graphics.PorterDuff.Mode.SRC_IN);
 
         Calendar calendar = Calendar.getInstance();
         Date now = new Date();
@@ -167,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         minutesLeft =  (millisLeft % (60 * 60 * 1000)) / (60 * 1000);
 
         // output
-        Random rnd = new Random();
+        rnd = new Random();
         txtDaysWeekend.setText(Integer.toString(nrDays));
         txtDaysWeekend.setTextColor(Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256)));
 
